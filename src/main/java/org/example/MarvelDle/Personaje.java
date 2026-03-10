@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MarvelDle;
 
 public class Personaje {
     private String nombre;

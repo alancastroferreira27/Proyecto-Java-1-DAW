@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MarvelDle;
 
 import java.util.ArrayList;
 import java.util.Random;

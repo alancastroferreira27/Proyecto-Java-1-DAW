@@ -1,4 +1,4 @@
-package org.example;
+package org.example.MarvelDle;
 
 public class Main {
     static void main(String[] args) {
