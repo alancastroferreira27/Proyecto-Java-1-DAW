@@ -3,11 +3,17 @@ package org.example.MarvelDle;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import java.io.FileReader;
+import java.io.Reader;
+import java.lang.reflect.Type;
 
 public class JuegoMarvel {
     private ArrayList<Personaje> baseDeDatos;
     private Personaje personajeSecreto;
     private Scanner scanner;
+    private int intentos;
 
     public JuegoMarvel() {
         baseDeDatos = new ArrayList<>();
@@ -17,12 +23,18 @@ public class JuegoMarvel {
     }
 
     private void cargarPersonajes() {
-        baseDeDatos.add(new Personaje("Iron Man", "Hombre", "Héroe", "Humano", "Tierra", "Vengadores", 2008));
-        baseDeDatos.add(new Personaje("Thor", "Hombre", "Héroe", "Dios", "Asgard", "Vengadores", 2011));
-        baseDeDatos.add(new Personaje("Thanos", "Hombre", "Villano", "Titán", "Titán", "Ninguna", 2012));
-        baseDeDatos.add(new Personaje("Gamora", "Mujer", "Héroe", "Zehoberei", "Zen-Whoberi", "Guardianes", 2014));
-        baseDeDatos.add(new Personaje("Groot", "Hombre", "Héroe", "Coloso Flora", "Planeta X", "Guardianes", 2014));
-        baseDeDatos.add(new Personaje("Viuda Negra", "Mujer", "Héroe", "Humano", "Tierra", "Vengadores", 2010));
+        try (java.io.Reader reader = new java.io.FileReader("personajes.json")) {
+            com.google.gson.Gson gson = new com.google.gson.Gson();
+
+            java.lang.reflect.Type listType = new com.google.gson.reflect.TypeToken<ArrayList<Personaje>>(){}.getType();
+
+            this.baseDeDatos = gson.fromJson(reader, listType);
+
+            System.out.println("✅ Base de datos cargada desde JSON con " + baseDeDatos.size() + " personajes.");
+        } catch (Exception e) {
+            System.out.println("❌ Error al cargar el JSON: " + e.getMessage());
+            this.baseDeDatos = new ArrayList<>();
+        }
     }
 
     private void elegirPersonajeSecreto() {
@@ -44,6 +56,7 @@ public class JuegoMarvel {
         while (!ganado) {
             System.out.println("\nIntroduce un nombre de personaje:");
             String intentoNombre = scanner.nextLine();
+            this.intentos++;
 
             Personaje intentoUsario = null;
             for (Personaje p : baseDeDatos) {
@@ -63,6 +76,7 @@ public class JuegoMarvel {
 
             if (intentoUsario.getNombre().equalsIgnoreCase(personajeSecreto.getNombre())) {
                 System.out.println("\n🎉 ¡BRUTAL! Has acertado. El personaje era " + personajeSecreto.getNombre());
+                System.out.println("\n🎉 Has echo " + intentos + " intentos.");
                 ganado = true;
             }
         }
