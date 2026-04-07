@@ -1,0 +1,182 @@
+[
+  {
+    "nombre": "Iron Man",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2008
+  },
+  {
+    "nombre": "Thor",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Dios",
+    "origen": "Asgard",
+    "afiliacion": "Vengadores",
+    "aparicion": 2011
+  },
+  {
+    "nombre": "Thanos",
+    "genero": "Hombre",
+    "tipo": "Villano",
+    "especie": "Titán",
+    "origen": "Titán",
+    "afiliacion": "Ninguna",
+    "aparicion": 2012
+  },
+  {
+    "nombre": "Capitán América",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2011
+  },
+  {
+    "nombre": "Black Widow",
+    "genero": "Mujer",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2010
+  },
+  {
+    "nombre": "Hulk",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2008
+  },
+  {
+    "nombre": "Scarlet Witch",
+    "genero": "Mujer",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2014
+  },
+  {
+    "nombre": "Loki",
+    "genero": "Hombre",
+    "tipo": "Villano",
+    "especie": "Gigante de Hielo",
+    "origen": "Jotunheim",
+    "afiliacion": "Ninguna",
+    "aparicion": 2011
+  },
+  {
+    "nombre": "Doctor Strange",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Maestros de las Artes Místicas",
+    "aparicion": 2016
+  },
+  {
+    "nombre": "Black Panther",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2016
+  },
+  {
+    "nombre": "Spider-Man",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2016
+  },
+  {
+    "nombre": "Gamora",
+    "genero": "Mujer",
+    "tipo": "Héroe",
+    "especie": "Zen-Whoberis",
+    "origen": "Zen-Whoberi",
+    "afiliacion": "Guardianes de la Galaxia",
+    "aparicion": 2014
+  },
+  {
+    "nombre": "Groot",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Flora colossus",
+    "origen": "Planeta X",
+    "afiliacion": "Guardianes de la Galaxia",
+    "aparicion": 2014
+  },
+  {
+    "nombre": "Hela",
+    "genero": "Mujer",
+    "tipo": "Villano",
+    "especie": "Dios",
+    "origen": "Asgard",
+    "afiliacion": "Ninguna",
+    "aparicion": 2017
+  },
+  {
+    "nombre": "Vision",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Androide",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2015
+  },
+  {
+    "nombre": "Capitana Marvel",
+    "genero": "Mujer",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2019
+  },
+  {
+    "nombre": "Killmonger",
+    "genero": "Hombre",
+    "tipo": "Villano",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Ninguna",
+    "aparicion": 2018
+  },
+  {
+    "nombre": "Ant-Man",
+    "genero": "Hombre",
+    "tipo": "Héroe",
+    "especie": "Humano",
+    "origen": "Tierra",
+    "afiliacion": "Vengadores",
+    "aparicion": 2015
+  },
+  {
+    "nombre": "Nebula",
+    "genero": "Mujer",
+    "tipo": "Héroe",
+    "especie": "Luphomoid",
+    "origen": "Luphom",
+    "afiliacion": "Guardianes de la Galaxia",
+    "aparicion": 2014
+  },
+  {
+    "nombre": "Ultron",
+    "genero": "Hombre",
+    "tipo": "Villano",
+    "especie": "Inteligencia Artificial",
+    "origen": "Tierra",
+    "afiliacion": "Ninguna",
+    "aparicion": 2015
+  }
+]
