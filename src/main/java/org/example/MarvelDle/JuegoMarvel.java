@@ -49,7 +49,7 @@ public class JuegoMarvel {
         System.out.println("=====================================");
         System.out.println("He elegido un personaje secreto de la base de datos.");
         System.out.println("Base de datos cargada con: " + baseDeDatos.size() + " personajes.");
-        System.out.println("Pistas: ✅ (Correcto) | ❌ (Incorrecto) | ⬆️ ⬇️ (Año mayor/menor)\n");
+        System.out.println("Pistas: ✅ (Correcto) | ❌ (Incorrecto) | ⬆️ ⬇️ (Aparicion mayor/menor)\n");
 
         boolean ganado = false;
 
