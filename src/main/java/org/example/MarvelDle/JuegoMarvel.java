@@ -47,7 +47,7 @@ public class JuegoMarvel {
         System.out.println("=====================================");
         System.out.println("   🦸‍♂️ BIENVENIDO A MARVEL-DLE 🦸‍♀️   ");
         System.out.println("=====================================");
-        System.out.println("He elegido un personaje secreto de la base de datos.");
+        System.out.println("Se ha elegido un personaje secreto de la base de datos.");
         System.out.println("Base de datos cargada con: " + baseDeDatos.size() + " personajes.");
         System.out.println("Pistas: ✅ (Correcto) | ❌ (Incorrecto) | ⬆️ ⬇️ (Aparicion mayor/menor)\n");
 
@@ -76,7 +76,7 @@ public class JuegoMarvel {
 
             if (intentoUsario.getNombre().equalsIgnoreCase(personajeSecreto.getNombre())) {
                 System.out.println("\n🎉 ¡BRUTAL! Has acertado. El personaje era " + personajeSecreto.getNombre());
-                System.out.println("\n🎉 Has echo " + intentos + " intentos.");
+                System.out.println("\n🎉 Has hecho " + intentos + " intentos.");
                 ganado = true;
             }
         }
@@ -84,16 +84,16 @@ public class JuegoMarvel {
 
     private void compararAtributos(Personaje intento) {
         System.out.print("Género: " + (intento.getGenero().equals(personajeSecreto.getGenero()) ? "✅ " : "❌ "));
-        System.out.print("| Tipo: " + (intento.getTipo().equals(personajeSecreto.getTipo()) ? "✅ " : "❌ "));
+        System.out.print("| Tipo (Héroe/Villano): " + (intento.getTipo().equals(personajeSecreto.getTipo()) ? "✅ " : "❌ "));
         System.out.print("| Especie: " + (intento.getEspecie().equals(personajeSecreto.getEspecie()) ? "✅ " : "❌ "));
         System.out.print("| Origen: " + (intento.getOrigen().equals(personajeSecreto.getOrigen()) ? "✅ " : "❌ "));
 
         if (intento.getAparicion() == personajeSecreto.getAparicion()) {
             System.out.println("| Año: ✅");
         } else if (intento.getAparicion() < personajeSecreto.getAparicion()) {
-            System.out.println("| Año: ⬆️ (El secreto es más reciente)");
+            System.out.println("| Año: ⬆️ (El personaje es más reciente)");
         } else {
-            System.out.println("| Año: ⬇️ (El secreto es más antiguo)");
+            System.out.println("| Año: ⬇️ (El personaje es más antiguo)");
         }
     }
 }
