@@ -252,39 +252,6 @@ flowchart LR
 
 ---
 
-### ⚙️ Diagrama de secuencia — Un intento del jugador
-
-```mermaid
-sequenceDiagram
-    actor Jugador
-    participant Main
-    participant JuegoMarvel
-    participant Personaje
-    participant JSON as personajes.json
-
-    Main->>JuegoMarvel: new JuegoMarvel()
-    JuegoMarvel->>JSON: FileReader + Gson.fromJson()
-    JSON-->>JuegoMarvel: ArrayList de Personaje
-    JuegoMarvel->>JuegoMarvel: elegirPersonajeSecreto()
-    Main->>JuegoMarvel: iniciarJuego()
-
-    loop Hasta acertar
-        Jugador->>JuegoMarvel: Introduce nombre
-        JuegoMarvel->>JuegoMarvel: Buscar en baseDeDatos
-        alt No encontrado
-            JuegoMarvel-->>Jugador: ⚠️ No está en la BD
-        else Encontrado
-            JuegoMarvel->>Personaje: getGenero(), getTipo(), etc.
-            JuegoMarvel->>JuegoMarvel: compararAtributos()
-            JuegoMarvel-->>Jugador: Pistas ✅ / ❌ / ⬆️ / ⬇️
-            alt Es el personaje secreto
-                JuegoMarvel-->>Jugador: 🎉 ¡Victoria!
-            end
-        end
-    end
-```
-
----
 
 ### 📊 Modelo de datos — Personaje
 
@@ -346,7 +313,7 @@ classDiagram
     Juego <|.. NuevoMinijuego : implementa
     Main --> Juego : selecciona y ejecuta
 ```
-
+.
 Para añadir un nuevo juego:
 
 1. Crear una clase que implemente `iniciarJuego()`
